@@ -2,6 +2,7 @@ label gigi_route_intro():
     $ new_route_setup(route=gigi_route, participants=None)
     $ paraphrase_choices = False
     
+    show hack effect 
     scene hack
     play music mysterious_clues
     enter chatroom pk
@@ -10,7 +11,7 @@ label gigi_route_intro():
     
     menu:
         "...Hello?":
-            msg pk "Don't be catious."
+            msg pk "Don't be cautious."
         "Welp, time to turn off my phone.":
             msg pk "Hey, don't just leave."
 
@@ -55,11 +56,11 @@ label gigi_route_intro():
     enter chatroom gg
     enter chatroom cc
     enter chatroom ra
-    msg gg "and then i went," pv 0.1
+    msg gg "and then i went," 
+    msg gg "WHAPLAM!!!" big bold pv 0.1
     show lightning banner
-    msg gg "WHAPLAM!!!" big bold 
     msg gg "the guy went down like in sonic!!"
-    msg cc "hey, don't spoil it!" spike_m 
+    msg cc "hey, don't spoil it!" bubble cc_spike_s
     msg ra "I'm not listening to this conversation right now...!" 
     msg gg "OH NO!!!"
     msg gg "IM SO SORRY I THOUGHT YOU 2 ALREADY WATCHED IT" 
@@ -68,8 +69,9 @@ label gigi_route_intro():
     msg cc "says the one who's been overworking until 5am on those papers"
     msg ra "I agree with ceci!!"
     msg ra "Instead of just us on a break, let's all go out to eat!"
-    msg gg "wait has no one noticed this random person in our chat"
-    msg ra "WHAT!?" spike_m bold 
+    msg gg "wait.."
+    msg gg "has no one noticed this random person in our chat"
+    msg ra "WHAT!?" blocky bold
 
     menu: 
         "Um, hello...":
@@ -78,7 +80,7 @@ label gigi_route_intro():
             msg cc "that doesn't mean anything!"
         "...":
             show lightning banner
-            msg er "IDENTIFY YOURSELF!" ser2 big 
+            msg er "IDENTIFY YOURSELF!" ser2 big bold
 
     msg gg "yea, only by them talking we get to know what their true intentions are!!!"
     msg m "I am actually your new assistant..."

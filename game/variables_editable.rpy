@@ -480,7 +480,11 @@ define all_bubbles_list = ['cloud_l', 'cloud_m', 'cloud_s', 'round_l',
     'spike_s', 'square_l', 'square_m', 'square_s', 'square2_l', 'square2_m',
     'square2_s', 'round2_l', 'round2_m', 'round2_s', 'flower_l', 'flower_m',
     'flower_s', 'glow2', 'glow3', 'square3_s', 'square3_m', 'square3_l',
-    'cloud2_s', 'cloud2_m', 'cloud2_l', 'spike2_l', 'spike2_m']
+    'cloud2_s', 'cloud2_m', 'cloud2_l', 'spike2_l', 'spike2_m', 'cc_spike_s', "gg_cloud_l"]
+    style cc_spike_s
+        padding (25, 25, 25, 25)
+    style gg_cloud_l
+        padding (25, 25, 25, 25)
 
 # A list of bubbles which will occasionally award a bonus hourglass when used
 # in a chatroom.

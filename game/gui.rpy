@@ -570,6 +570,7 @@ define gui.longer_than = 420
 ## Small Spike Bubble
 define gui.spike_s_padding = (45, 50, 95, 50)
 define gui.spike_s_offset = (140, 38)
+define gui.cc_spike_s_offset = (170, 38)
 
 ## Small Spike Bubble v2
 define gui.spike_s2_padding = (25, 20, 25, 15)
@@ -599,6 +600,7 @@ define gui.cloud_m_offset = (135, 25)
 define gui.cloud_l_padding = (65, 40, 70, 80)
 define gui.cloud_l_offset = (115, 20)
 define gui.ju_cloud_l_offset = (115, 5)
+define gui.gg_cloud_l_offset = (115, 20)
 
 ## Cloud2 Bubbles
 define gui.cloud2_l_offset = gui.cloud_l_offset
