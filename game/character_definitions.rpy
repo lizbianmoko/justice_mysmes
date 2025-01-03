@@ -324,7 +324,22 @@ default ne = ChatCharacter(
                 vn_name="Emma",
                 window_color="#B400A4",
                 image="emma",
-                voice_tag="em_voice"
+                voice_tag="em_voice")
+default sh = ChatCharacter(
+                name="Shiori",
+                file_id="sh",
+                prof_pic="Hololive Profiles/shiori_default.png",
+                heart_color="#857CA6",
+                participant_pic="Hololive Profiles/shiori profiles/shio_hm.png",
+                cover_pic="Cover Photos/emma_cover.png",
+                status="Man, I'm so bored I could eat a panther!",
+                bubble_color="#B8A0CD",
+                glow_color="#C3ADD9",
+                homepage_pic="Profile Pics/main_profile_emma.webp",
+                vn_name="Emma",
+                window_color="#B400A4",
+                image="emma",
+                oice_tag="em_voice"
 )
 # This list is used *specifically* to display characters you can see on the
 # main menu -- they have profiles and show up in your phone contacts
