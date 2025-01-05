@@ -17,7 +17,7 @@ label gigi_route_intro():
 
     msg pk "I worked my ass off getting into your phone."
     msg pk "There's not much service where I'm at."
-    msg pk "Anyways, have you heard of Justice?" 
+    msg pk "Anyways, have you heard of Justice?" ser1
 
     menu:
         "Of course.":
@@ -47,7 +47,7 @@ label gigi_route_intro():
     
     msg pk "I'll send you to Justice's current chatroom."
     msg pk "From here on, your conversations will get tracked by me."
-    msg pk "Do not tell anyone about our deal, or else it'll get dangerous for me and you."
+    msg pk "Do not tell anyone about our deal, or else it'll get dangerous for me and you." pv 1.1
     msg pk "Good luck!"
     clear chat participants
     scene earlyMorn
@@ -58,6 +58,7 @@ label gigi_route_intro():
     enter chatroom ra
     msg gg "and then i went," 
     msg gg "WHAPLAM!!!" big bold pv 0.1
+    show shake
     show lightning banner
     msg gg "the guy went down like in sonic!!"
     msg cc "spoilers" bubble cc_spike_s
@@ -66,10 +67,11 @@ label gigi_route_intro():
     msg gg "IM SO SORRY I THOUGHT YOU 2 ALREADY WATCHED IT" 
     msg cc "we were too busy..." 
     msg er "You two deserve a break."
+    msg er "You're both working hard on your respective tasks, so try to rest whenever you can!"
     msg cc "says the one who's been overworking until 5am on those papers"
     msg ra "I agree with ceci!!"
     msg ra "Instead of just us on a break, let's all go out to eat!"
-    msg gg "wait.."
+    msg gg "wait.." glow
     msg gg "has no one noticed this random person in our chat"
     msg ra "WHAT!?" blocky bold
 
@@ -79,23 +81,23 @@ label gigi_route_intro():
             msg ra "they seem pretty harmless..."
             msg cc "that doesn't mean anything!"
         "...":
-            show lightning banner
             msg er "IDENTIFY YOURSELF!" ser2 big bold
+            show lightning banner
 
     msg gg "yea, only by them talking we get to know what their true intentions are!!!"
     msg m "I am actually your new assistant..."
     msg cc "???"
     msg cc "that's a first i've heard of that..."
-    msg ra "Is it possible management just wanted it a secret?"
+    msg ra "Is it possible management just wanted it to be a secret?"
     msg er "They wouldn't hide something as important as a new {u}employee{/u}."
     msg gg "i think theyre just lying"
     msg gg "kill yourself {big}NOW!{/big}" blocky bold 
     msg er "Well, I'll confirm with management..." 
     exit chatroom er
-    enter chatroom er
+    enter chatroom er pv 0.6
     msg cc "that was fast"
     msg er "It was only {i}now{/i} they decided to tell me."
-    msg er "So this stranger isn't actually dangerous."
+    msg er "This stranger says who they say they are. They pose no threat."
     msg gg "oops... sorry for telling you to kill yourself, that was out of pocket..."
 
     menu:
@@ -112,7 +114,25 @@ label gigi_route_intro():
     msg er "Unfortunately, yes."
     msg cc "if anything we'd go out for tea..."
     msg gg "water!!! i need water!!!"
-    msg er "Hahaha, no more silly arguments now."
+    
+    menu:
+        "I'd like some coffee.":
+            award heart ra
+            msg ra "OMG! You also like coffee?"
+            msg cc "it's an enemy!"
+        "Tea sounds lovely...":
+            award heart cc
+            msg cc "fellow tea lover!"
+            msg ra "Hmph, I will convert both of you to coffee one day!"
+        "Water is the only answer here.":
+            award heart gg
+            msg gg "YOU GET ME!!!" glow
+
+    msg er "I've never been one to prefer one or the other..."
+    msg er "But I do dislike tea. Sorry CC."
+    msg cc "hmmm... i guess it's fine..." ser1
+    msg er "I'm glad you can understand :D" 
+    msg er "No more silly arguments now."
     msg er "We should all go to sleep... We need rest for tomorrow."
     msg ra "As long as {i}you{/i} don't stay up!"
     msg er "Of course, my pretty kitty~" 
@@ -125,3 +145,41 @@ label gigi_route_intro():
     msg er "Make sure to rest up; there's a lot to do tomorrow. I look foward to working with you."
     exit chatroom er
     return 
+
+label after_gigi_route_intro:
+    compose text er:
+        msg er "Welcome to Justice, [name]!"
+        msg er "I hope you enjoy your time here."
+        msg er "In the meantime, I will try and update you with important tasks to do."
+        msg er "If you have any questions, please reach out to me or any Justice member."
+    
+    compose text ra:
+        msg ra "[name], I'm so excited to have an assistant!!"
+        msg ra "If only we weren't separated..."
+        label separate1
+    return
+
+    label separate1:
+            menu: 
+                "I'm sure it's no biggie.":
+                    msg ra "Liz does need help with reports, so I'm glad you can help lighten the laod!"
+                "We can go out for coffee if we ever see each other.":
+                    award heart ra
+                    msg ra "Of course!!! I can't wait to see what you're like!"
+            return
+
+    compose text gg:
+        msg gg "since youre our new assistant, that means i get to order you around!"
+        msg gg "im the alpha around here, remember that!!"
+        label alpha1
+    return
+
+    label alpha1: 
+            menu:
+                "Okay, Alpha, as a measly beta I'll do my best to support you!":
+                    award heart gg
+                    msg gg "haha! of course, alpha will take good care of you in return!"
+                "I'll try to meet your demands.":
+                    msg gg "you dont need to be so stiff!"
+                    msg gg "but if youre uncomfortable, you can tell me anytime!"
+            return
