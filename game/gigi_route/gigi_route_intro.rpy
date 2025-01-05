@@ -60,9 +60,9 @@ label gigi_route_intro():
     msg gg "WHAPLAM!!!" big bold pv 0.1
     show lightning banner
     msg gg "the guy went down like in sonic!!"
-    msg cc "hey, don't spoil it!" bubble cc_spike_s
-    msg ra "I'm not listening to this conversation right now...!" 
-    msg gg "OH NO!!!"
+    msg cc "spoilers" bubble cc_spike_s
+    msg ra "I'm not listening to this conversation right now...!" big
+    msg gg "OH NO!!!"  
     msg gg "IM SO SORRY I THOUGHT YOU 2 ALREADY WATCHED IT" 
     msg cc "we were too busy..." 
     msg er "You two deserve a break."
@@ -86,11 +86,11 @@ label gigi_route_intro():
     msg m "I am actually your new assistant..."
     msg cc "???"
     msg cc "that's a first i've heard of that..."
-    msg ra "Is it possible maangement just wanted it a secret?"
+    msg ra "Is it possible management just wanted it a secret?"
     msg er "They wouldn't hide something as important as a new {u}employee{/u}."
     msg gg "i think theyre just lying"
     msg gg "kill yourself {big}NOW!{/big}" blocky bold 
-    msg er "Well, I'll confirm with maangement..." 
+    msg er "Well, I'll confirm with management..." 
     exit chatroom er
     enter chatroom er
     msg cc "that was fast"
@@ -118,7 +118,7 @@ label gigi_route_intro():
     msg er "Of course, my pretty kitty~" 
     msg cc "that's my cue to leave! have a good rest everyone!"
     exit chatroom cc
-    msg gg "i need 2 leave 2!!! gotta catch those z's now!"
+    msg gg "i need 2 leave 2!!! gotta catch those zs now!"
     exit chatroom gg
     msg ra "Good night Liz and new assistant!"
     exit chatroom ra

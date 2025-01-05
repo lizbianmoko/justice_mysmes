@@ -55,6 +55,12 @@ init 5:
     style ser2xb:
         font gui.serif_2xb
 
+    style cc_spike_s:
+        padding (25, 25, 25, 25)
+    style gg_cloud_l:
+        padding (25, 25, 25, 25)
+
+
     ## Sans Serif Font 1
     style sser1:
         # this is the regular dialogue font/the default
