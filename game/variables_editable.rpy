@@ -370,6 +370,10 @@ image sa_spacethought = "Menu Screens/Spaceship/sa_spacethought.webp"
 image v_spacethought = "Menu Screens/Spaceship/v_spacethought.webp"
 image y_spacethought = "Menu Screens/Spaceship/y_spacethought.webp"
 image z_spacethought = "Menu Screens/Spaceship/z_spacethought.webp"
+image space_cc = "Hololive Space Thoughts/space_cc.png"
+image space_er = "Hololive Space Thoughts/space_er.png"
+image space_gg = "Hololive Space Thoughts/space_gg.png"
+image space_ra = "Hololive Space Thoughts/space_ra.png"
 
 ########################################
 ## DAY SELECT IMAGES
@@ -420,6 +424,10 @@ image va_contact = "Phone Calls/call_contact_vanderwood.webp"
 image y_contact = 'Phone Calls/call_contact_yoosung.webp'
 image z_contact = 'Phone Calls/call_contact_zen.webp'
 image ri_contact = 'Phone Calls/call_contact_rika.webp'
+image er_contact = "Hololive Phone Contacts/er_phone.png"
+image gg_contact = "Hololive Phone Contacts/gg_phone.png"
+image cc_contact = "Hololive Phone Contacts/cc_phone.png"
+image ra_contact = "Hololive Phone Contacts/ra_phone.png"
 
 ########################################
 ## STORY MODE/VN IMAGES
@@ -600,36 +608,34 @@ init python:
 # Chip thoughts are organized in a tuple with three items:
 # The description, approximate number of hearts, and number of hourglasses
 default chip_prize_list = RandomBag( [
-    ('A clump of cat hair.', 30, 0),
-    ("Jumin's old toothbrush.", 20, 0),
-    ("Some Honey Buddha Chip crumbs.", 24, 0),
-    ("Jaehee's spare pair of glasses.", 65, 0),
-    ("Yoosung's left sock.", 33, 0),
-    ("Your middle school photo album!", 19, 0),
-    ("Toothpaste that tastes like Honey Buddha Chips", 69, 0),
-    ("A completion certificate for mid-level dating.", 100, 0),
+    ('A piece of hard wood.', 30, 0),
+    ("A Grem's tears.", 20, 0),
+    ("A torn Chattini plushie.", 24, 0),
+    ("Elizabeth's pen.", 65, 0),
+    ("Cecilia's spare forearm.", 33, 0),
+    ("A painted golden apple.", 1, 3),
+    ("A note which contains the word fister.", 69, 0),
+    ("Raora's hat!", 100, 8),
     ("It's a present for you.", 67, 0),
     ("A very normal industrial product.", 86, 0),
-    ("This Honey Boss Chip began in 1987 England...", 34, 0),
-    ("Disco lights! Let's dance!", 69, 0),
-    ("Yoosung's blessed hair strands. Blow on it and make a wish!", 443, 4),
-    ("A chip bag full of chip dust", 10, 0),
-    ("There's mold on these...", 19, 0)
+    ("Half eaten Nikuman.", 34, 0),
+    ("A Lizbian sending pregnant emojis.", 69, 0),
+    ("Elizabeth's microphone!", 443, 12),
+    ("Picture of a coughing baby.", 10, 0),
+    ("A... pair of wolf ears?", 19, 0),
+    ("A worn shoebox with September written on it.", 9, 21),
+    ("A lot of empty gacha capsules.", 15, 0),
+    ("A broken stopwatch.", 9, 30),
     # Feel free to add more things
     ] )
 
 
 # This is what a list of thoughts for the spaceship will look like
 default space_thoughts = RandomBag( [
-    SpaceThought(ja, "I should have broken these shoes in better before wearing them to work today."),
-    SpaceThought(ju, "I wonder how Elizabeth the 3rd is doing at home."),
-    SpaceThought(s, "Maybe I should Noogle how to get chip crumbs out of my keyboard..."),
-    SpaceThought(y, "Yes! Chocolate milk is on sale!"),
-    SpaceThought(z, "Maybe I should learn how to braid my hair..."),
-    SpaceThought(r, "I can't believe I accidentally used one of the other Believer's shampoo. My hair smells like lemons."),
-    SpaceThought(ri, "Hmm... the soup tastes different today."),
-    SpaceThought(sa, "So... sleepy..."),
-    SpaceThought(v, "The weather is so very lovely today. Maybe I'll go for a walk.")
+    SpaceThought(er, "I am just monitoring her... Just monitoring..."),
+    SpaceThought(gg, "Should I go for another League round or continue Teen Wolf?"),
+    SpaceThought(cc, "I can't believe I have to tune my strings again..."),
+    SpaceThought(ra, "Getting one more Chattini wouldn't hurt!")
     ] )
 
 ########################################
