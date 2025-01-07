@@ -31,6 +31,10 @@ image cg_label_u = 'CGs/label_bg_u.webp'
 image cg_label_v = 'CGs/label_bg_v.webp'
 image cg_label_y = 'CGs/label_bg_y.webp'
 image cg_label_z = 'CGs/label_bg_z.webp'
+image cg_label_er = 'CGs/label_bg_s.webp'
+image cg_label_gg = 'CGs/label_bg_other.webp'
+image cg_label_cc = 'CGs/label_bg_y.webp'
+image cg_label_ra = 'CGs/raora_bglabel.webp'
 
 image ja_album_cover = 'CGs/ja_album_cover.webp'
 image ju_album_cover = 'CGs/ju_album_cover.webp'
@@ -41,6 +45,10 @@ image v_album_cover = 'CGs/v_album_cover.webp'
 image y_album_cover = 'CGs/y_album_cover.webp'
 image z_album_cover = 'CGs/z_album_cover.webp'
 image common_album_cover = 'CGs/common_album_cover.webp'
+image er_album_cover = 'CGs/er_album_cover.png'
+image gg_album_cover = 'CGs/gg_album_cover.png'
+image cc_album_cover = 'CGs/cc_album_cover.png'
+image ra_album_cover = 'CGs/ra_albume_cover.png'
 
 
 #************************************
@@ -63,6 +71,10 @@ define common_album = [
     GalleryImage("cg common_2"),
     GalleryImage("cg common_3")
 ]
+define er_album = []
+define gg_album = []
+define cc_album = []
+define ra_album = []
 
 
 init offset = 0
@@ -73,5 +85,5 @@ init offset = 0
 # the album is not associated with a particular character its title will
 # be whatever this string is (so 'common' shows as "Common" in the Album).
 default all_albums = [
-    'ju', 'z', 's', 'y', 'ja', 'v', 'u', 'r', 'common'
+    'er', 'gg', 'cc', 'ra'
 ]
