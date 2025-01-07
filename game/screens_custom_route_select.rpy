@@ -8,7 +8,7 @@ screen custom_route_select_screen():
         button:
             ysize 210 # Set the height of the button
             # The image that goes on the left of the button
-            add 'Menu Screens/Main Menu/route_select_tutorial.webp':
+            add 'Menu Screens/Main Menu/kind_gigi.png':
                 align (0.08, 0.5)
             action Start("gigi_route_intro")
             # The box with text on the right side of the button
