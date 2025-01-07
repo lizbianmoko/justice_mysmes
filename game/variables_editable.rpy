@@ -370,10 +370,10 @@ image sa_spacethought = "Menu Screens/Spaceship/sa_spacethought.webp"
 image v_spacethought = "Menu Screens/Spaceship/v_spacethought.webp"
 image y_spacethought = "Menu Screens/Spaceship/y_spacethought.webp"
 image z_spacethought = "Menu Screens/Spaceship/z_spacethought.webp"
-image space_cc = "Hololive Space Thoughts/space_cc.png"
-image space_er = "Hololive Space Thoughts/space_er.png"
-image space_gg = "Hololive Space Thoughts/space_gg.png"
-image space_ra = "Hololive Space Thoughts/space_ra.png"
+image cc_spacethought = "Hololive Space Thoughts/space_cc.png"
+image er_spacethought = "Hololive Space Thoughts/space_er.png"
+image gg_spacethought = "Hololive Space Thoughts/space_gg.png"
+image ra_spacethought = "Hololive Space Thoughts/space_ra.png"
 
 ########################################
 ## DAY SELECT IMAGES
