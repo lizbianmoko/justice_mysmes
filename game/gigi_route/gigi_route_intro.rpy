@@ -167,19 +167,3 @@ label after_gigi_route_intro:
                     award heart ra
                     msg ra "Of course!!! I can't wait to see what you're like!"
             return
-
-    compose text gg:
-        msg gg "since youre our new assistant, that means i get to order you around!"
-        msg gg "im the alpha around here, remember that!!"
-        label alpha1
-    return
-
-    label alpha1: 
-            menu:
-                "Okay, Alpha, as a measly beta I'll do my best to support you!":
-                    award heart gg
-                    msg gg "haha! of course, alpha will take good care of you in return!"
-                "I'll try to meet your demands.":
-                    msg gg "you dont need to be so stiff!"
-                    msg gg "but if youre uncomfortable, you can tell me anytime!"
-            return
