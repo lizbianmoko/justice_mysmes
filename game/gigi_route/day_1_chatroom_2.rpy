@@ -30,7 +30,7 @@ label day_1_chatroom_2():
             msg ra "yap yap yap yap yap"
             msg cc "HEY"
 msg cc "cg ra_1" img
-msg cc "i enter her room and she's STILL tired! WITH COFFEE IN HAND!"
+msg cc "i enter your room and you're STILL tired! WITH COFFEE IN HAND!"
 msg ra "Wha- CC!"
 msg ra "I told you I just woke up from a nap!"
 msg cc "at NINE IN THE MORNIGN?" big
@@ -38,6 +38,17 @@ msg cc "DRINKING COFFEE?" big blocky
 msg cc "raora, i saw you down freshly brewed coffee at 6:30 am"
 msg cc "i thought coffee was supposed to keep you awake?"
 msg ra "That's different!!!"
-msg ra "After I got down with reports, I got tired..."
-msg ra "And when Liz scolded us earlier, I also got more tired..."
-msg cc "who gets tired "
+msg ra "After I got done with reports, I got tired..."
+msg ra "And when Liz scolded us earlier, I got even more tired..."
+msg cc "[name], do you see this...???"
+
+menu:
+    "Raora has logical reasoning... She likes coffee, after all; she's going to drink coffee":
+        award heart ra
+        msg ra "Thank you [name]!"
+        msg ra "Unlike this coffee hater you seem to understand me! :D"
+        msg cc "isn't drinking coffee twice with a nap in between ridiculous though":
+    "It is pretty strange to drink coffee and nap at 9AM...":
+        award heart cc
+        msg cc "[name] understands!"
+        msg cc "sure, you can drink coffee in the early morning, but do you {i}really{/i} need it after a 9am nap?"
