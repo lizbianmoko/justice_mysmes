@@ -19,6 +19,7 @@ image cg ju_1 = "CGs/ju_album/cg-1.webp"
 
 image cg er_1 = "CGs/er_album/blood_raven.jpg"
 
+image cg ra_1 = "CGs/ra_album/ra_coffee.jpg"
 
 #************************************
 # Album Cover Images
@@ -76,7 +77,7 @@ define common_album = [
 define er_album = [ GalleryImage("cg er_1")]
 define gg_album = []
 define cc_album = []
-define ra_album = []
+define ra_album = [ GalleryImage("cg ra_1")]
 
 
 init offset = 0
