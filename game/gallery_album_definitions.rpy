@@ -21,6 +21,8 @@ image cg er_1 = "CGs/er_album/blood_raven.jpg"
 
 image cg ra_1 = "CGs/ra_album/ra_coffee.jpg"
 
+image cg cc_1 = "CGs/cc_album/kind_cc.jpg"
+
 #************************************
 # Album Cover Images
 #************************************
@@ -76,7 +78,7 @@ define common_album = [
 ]
 define er_album = [ GalleryImage("cg er_1")]
 define gg_album = []
-define cc_album = []
+define cc_album = [ GalleryImage("cg cc_1")]
 define ra_album = [ GalleryImage("cg ra_1")]
 
 
