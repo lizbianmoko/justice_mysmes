@@ -12,6 +12,8 @@ label day_1_chatroom_2():
     msg m "Know what?"
     msg cc "raora went back to nap and woke up drinking at least three cups of coffee!"
     msg ra "It's not {i}that{/i} bad..."
+    msg cc "tea isn't like coffee where if you drink too much of it"
+    msg cc "you'll end up unhealthy beccause of caffeine" sser2
 
     menu:
         "Three cups sounds a bit unreasonable...":
@@ -34,7 +36,8 @@ label day_1_chatroom_2():
     msg cc "SEE LOOK"
     msg cc "COFFEE IN HAND"
     msg cc "RECENTLY WOKE UP!!!"
-    msg cc "i enter and i see two mugs on her desk!!"
+    msg cc "AND SOMEHOW STILL TIRED???" big
+    msg cc "i enter her room and i see two mugs on her desk too!!"
     msg cc "you have to admit," ser1
     msg cc "even if you're a coffee lover, that's WAY too much!" ser1
     msg m "It is... a bit odd."
@@ -51,18 +54,18 @@ label day_1_chatroom_2():
     msg cc "...okay"
     msg ra "Coffee is just better!!"
     msg ra "Obviously you don't drink it because"
-    msg ra "you don't wake up normally!" big glow
+    msg ra "you don't wake up like normal people!" big glow
     msg cc "GASP" bubble cc_spike_s
     msg cc "I CAN'T BELIEVE YOU STOOPED SO LOW"
-    msg cc "TO THE POINT YOU OFFEND AUTOMATONS"
+    msg cc "TO THE POINT YOU OFFENDED AUTOMATONS"
     msg ra "I'M SORRY ;W;"
     msg ra "I was typing before thinking!!!"
 
     menu:
         "Okay, this is clearly getting out of hand.":
             msg cc "well OBVIOUSLY"
-            msg m "I meant that you two are fighting too much."
-            msg m "Aren't you two friends?"
+            msg m "I meant that you two are fighting too much." 
+            msg m "Aren't you two friends?" ser1
             msg m "Instead of arguing about tea and coffee endlessly..."
             msg m "You two should start making up."
             msg cc "well... you're right..."
@@ -77,7 +80,7 @@ label day_1_chatroom_2():
     msg ra "I'm sorry CC..." sser2 
     msg ra "I just really want you to like coffee!"
     msg ra "But you yap so much about tea!"
-    msg ra "I had no idea what took over me..."
+    msg ra "I had no idea what took over me;;..."
     msg cc "it's okay raora"
     msg cc "i admit, i was also acting a bit..."
     msg ra "Like a meanie?" 
@@ -95,12 +98,13 @@ label day_1_chatroom_2():
     msg ra "A latte is just what you need CC!!!"
     msg cc "a latte is the LAST thing i need"
     msg cc "let me relax with some tea..." curly
+    msg cc "unlike the bitter COFFEE, tea can help me concentrate better"
     msg ra "Aren't you working on something tho?"
     msg cc "i don't know what you're talking about"
     msg cc "i'm just relaxing with some tea."
     msg cc "because tea is SCIENTIFICALLY shown to relax your mind"
     msg cc "and also i won't explode from drinking it"
-    msg ra "That's just something you made up!"
+    msg ra "That's just something you made up!" big
     msg cc "..."
     msg cc "you know what"
     msg cc "[name!u], you know what you're supposed to do, right?"
@@ -116,19 +120,20 @@ label day_1_chatroom_2():
     msg ra "But we never found the time to email our guests;;..."
     msg cc "it's why you have an email function"
     msg cc "arguing with raora made me realize..."
-    msg cc "there's someone i found on twitter who dislikes coffee"
+    msg cc "there's someone i found on twitter who dislikes coffee" glow
     msg ra "What!?"
     msg ra "You were just looking for coffee haters... >:("
     msg cc "the person is a food critic"
     msg cc "so if they hate coffee... then that means i'm right!"
     msg ra "No it doesn't!" big blocky
-    msg cc "...anyways"
+    msg cc "...anyways" curly
     msg cc "they're a rosarian, so they'll surely accept the invite"
     msg cc "we're never too sure though"
     msg cc "so that's why you'll be sending out emails to people we want to invite"
     msg ra "How is a food critic supposed to help us catch Advent?"
     msg cc "they're also a jailbird, so surely they know something?"
     msg cc "it's just an idea though"
+    msg cc "i'm sure they can provide meaningful insight"
 
     menu:
         "Sure, let's invite them.":
@@ -150,7 +155,7 @@ label day_1_chatroom_2():
     msg cc "i'll be heading out to work"
     msg cc "that tea surely helped me energize"
     msg ra "Clearly tea doesn't do that..."
-    msg cc "oh look at the time, i gotta go right NOW"
+    msg cc "oh look at the time, i gotta go right NOW" big
     msg cc "i'll see you two later!"
     exit chatroom cc
     msg ra "[name], CC is still denying that coffee is the best!"
@@ -161,3 +166,28 @@ label day_1_chatroom_2():
     exit chatroom ra
     return
 
+label after_day_1_chatroom_2:
+    compose text cc:
+        msg cc "whatever raora tells you"
+        msg cc "she's lying"
+        msg cc "well, i'm exaggerating, but you get what i mean"
+        msg cc "if she ever shows you a picture of me know it was taken without consent"
+        label confusion1
+
+    return
+
+label confusion1: 
+    menu:
+        "Raora's probably teasing you.":
+            msg cc "well... that's true, but it's kind of..."
+            msg cc "embarrassing..."
+            msg cc "...don't ask me why i'd be embarrassed, by the way"
+            msg cc "note to never trust raora..."
+        "She's allowed to do whatever.":
+            award heart cc
+            msg cc "i guess you're right"
+            msg cc "i did make a big deal in the chatroom earlier and i felt bad she had to apologize"
+            msg cc "still, she's going to take revenge..."
+            msg cc "by showing a really embarrassing picture of me."
+            msg cc "don't open anything she sends, okay!?"
+    return
