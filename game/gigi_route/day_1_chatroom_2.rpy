@@ -13,7 +13,7 @@ label day_1_chatroom_2():
     msg cc "raora went back to nap and woke up drinking at least three cups of coffee!"
     msg ra "It's not {i}that{/i} bad..."
     msg cc "tea isn't like coffee where if you drink too much of it"
-    msg cc "you'll end up unhealthy beccause of caffeine" sser2
+    msg cc "you'll end up unhealthy because of caffeine" sser2
 
     menu:
         "Three cups sounds a bit unreasonable...":
