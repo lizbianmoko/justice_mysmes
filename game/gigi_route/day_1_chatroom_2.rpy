@@ -37,7 +37,7 @@ label day_1_chatroom_2():
     msg cc "i enter and i see two mugs on her desk!!"
     msg cc "you have to admit," ser1
     msg cc "even if you're a coffee lover, that's WAY too much!" ser1
-    msg mc "It is... a bit odd."
+    msg m "It is... a bit odd."
     msg ra "...okay well, I do admit I drank too much"
     msg ra "BUT!" glow
     msg ra "I have work! You expect me to sleep through work?"
