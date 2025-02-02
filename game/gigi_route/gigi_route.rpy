@@ -1,7 +1,9 @@
 default gigi_route_good_end = ["Good End",
     RouteDay("1st", [
         ChatRoom("League and Advent", "day_1_chatroom_1", '07:00', [gg, ra]),
-        ChatRoom("Coffee vs. Tea", "day_1_chatroom_2", '09:00', [cc, ra])]),
+        ChatRoom("Coffee vs. Tea", "day_1_chatroom_2", '09:00', [cc, ra]),
+        ChatRoom("Who is Nerissa Ravencroft?", "day_1_chatroom_3", "01:00", [er])
+        ]),
     RouteDay('2nd'),
     RouteDay('3rd'),
     RouteDay('4th'),
