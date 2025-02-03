@@ -159,11 +159,11 @@ label after_gigi_route_intro:
         label separate1
     return
 
-    label separate1:
-            menu: 
-                "I'm sure it's no biggie.":
-                    msg ra "Liz does need help with reports, so I'm glad you can help lighten the laod!"
-                "We can go out for coffee if we ever see each other.":
-                    award heart ra
-                    msg ra "Of course!!! I can't wait to see what you're like!"
-            return
+label separate1:
+    menu: 
+        "I'm sure it's no biggie.":
+            msg ra "Liz does need help with reports, so I'm glad you can help lighten the laod!"
+        "We can go out for coffee if we ever see each other.":
+            award heart ra
+            msg ra "Of course!!! I can't wait to see what you're like!"
+    return

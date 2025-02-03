@@ -154,15 +154,15 @@ label after_day_1_chatroom_1:
         label alpha1
             return
 
-            label alpha1: 
-                menu:
-                    "Okay, Alpha, as a measly beta I'll do my best to support you!":
-                        award heart gg
-                        msg gg "haha! of course, alpha will take good care of u in return!"
-                    "I'll try to meet your demands.":
-                        msg gg "u dont need to be so stiff!"
-                        msg gg "but if youre uncomfortable, you can tell me anytime!"
-                return
+label alpha1: 
+    menu:
+        "Okay, Alpha, as a measly beta I'll do my best to support you!":
+                award heart gg
+                msg gg "haha! of course, alpha will take good care of u in return!"
+        "I'll try to meet your demands.":
+                msg gg "u dont need to be so stiff!"
+                msg gg "but if youre uncomfortable, you can tell me anytime!"
+    return
 
 label day_1_chatroom_1_incoming_er:
     msg er "[name], I want to apologize through call."

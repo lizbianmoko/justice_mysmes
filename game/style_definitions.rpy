@@ -58,7 +58,7 @@ init 5:
     style cc_spike_s:
         padding (25, 25, 25, 25)
     style gg_cloud_l:
-        padding (25, 25, 25, 25)
+        padding (55, 40, 95, 50)
 
 
     ## Sans Serif Font 1
