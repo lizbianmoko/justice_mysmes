@@ -122,6 +122,18 @@ define late_night_greeting = {
             "난 새벽 공기가 참 좋더라.")] }
 
 define morning_greeting = {
+    'er': [ DayGreeting('Elizabeth/Morning/lovely_lovely',
+            "Lovely to see you to see you lovelyyyy!~ *giggles*")],
+
+    'gg': [ DayGreeting('Gigi/Morning/gimurin_gimurin',
+            "Giii murrinnn giii muriiinnn *gremlin noises* giiii muriinnd!")],
+
+    'cc': [DayGreeting('Cecilia/Morning/speen_ween',
+           "*Automaton noises* SPEEEN TO WEEEN!")],
+
+    'ra': [DayGreeting('Raora/Morning/beeg_trouble'),
+           "Beeg cat means beeg trouble, RAAOOOOO!"],
+
     'ja': [ DayGreeting('Jaehee/Morning/ja-m-1',
             "A brand new day has started",
             "새로운 하루가 시작되었네요"),
