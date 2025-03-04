@@ -47,7 +47,7 @@ label day_1_chatroom_3():
     msg er "The reason why Nerissa was here is because we were making plans for today."
     msg m "Nerissa? Isn't she one of the criminals you're supposed to catch?"
     msg er "It's just monitoring!"
-    msg er "Honestly, the Gods want us to keep a close eye on them."
+    msg er "Hhe Gods want us to keep a close eye on them."
     msg er "For now, we're all supposed to be talents in Hololive."
     msg er "And it's not weird for me to get close to Advent!"
     msg er "It's for monitoring purposes so I can learn her darkest secrets and weaknesses..."
@@ -55,4 +55,7 @@ label day_1_chatroom_3():
     msg er "We're simply chatting at a cafe Raora recommended to me."
     msg er "As you know, I am learning the witch's weaknesses so I can capture her efficiently."
     msg er "...When the time comes."
-    msg 
+    msg m "When are you two meeting?"
+    msg er "I'm... actually here, waiting for her."
+    msg er "I arrived fifteen minutes early..." sa_sigh_1
+    msg er ""
