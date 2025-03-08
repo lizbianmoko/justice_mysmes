@@ -57,5 +57,4 @@ label day_1_chatroom_3():
     msg er "...When the time comes."
     msg m "When are you two meeting?"
     msg er "I'm... actually here, waiting for her."
-    msg er "I arrived fifteen minutes early..." sa_sigh_1
-    msg er ""
+    msg er "I arrived fifteen minutes early..." bubble sa_sigh_1
