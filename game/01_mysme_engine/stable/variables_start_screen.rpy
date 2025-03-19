@@ -131,8 +131,8 @@ define morning_greeting = {
     'cc': [DayGreeting('Cecilia/Morning/speen_ween',
            "*Automaton noises* SPEEEN TO WEEEN!")],
 
-    'ra': [DayGreeting('Raora/Morning/beeg_trouble'),
-           "Beeg cat means beeg trouble, RAAOOOOO!"],
+    'ra': [DayGreeting('Raora/Morning/beeg_trouble',
+           "Beeg cat means beeg trouble, RAAOOOOO!")],
 
     'ja': [ DayGreeting('Jaehee/Morning/ja-m-1',
             "A brand new day has started",
