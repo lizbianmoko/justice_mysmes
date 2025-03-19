@@ -43,24 +43,28 @@ label day_1_chatroom_3():
             msg er "I'll just have to message the girls about it then..."
             msg er "I'll type it in here so they can see; I hope you don't mind."
     
-    msg er "The reason why Nerissa was here is because we were making plans for today."
+    msg er "The reason why Nerissa was here is because.."
+    msg er "...we were making plans for today." glow
     msg m "Nerissa? Isn't she one of the criminals you're supposed to catch?"
-    msg er "It's just monitoring!"
+    msg er "It's just monitoring!" big bold
     msg er "The Gods want us to keep a close eye on them."
     msg er "For now, we're all supposed to be talents in Hololive."
     msg er "And it's not weird for me to get close to Advent!"
+    show shake
+    show banner lightning
     msg er "It's for monitoring purposes so I can learn her darkest secrets and weaknesses..."
     msg m "...Sure. So what are you two doing today?"
     msg er "We're simply chatting at a cafe Raora recommended to me."
     msg er "As you know, I am learning the witch's weaknesses so I can capture her efficiently."
-    msg er "...When the time comes."
+    msg er "...When the time comes." ser1
     msg m "When are you two meeting?"
     msg er "I'm... actually here, waiting for her."
-    msg er "I arrived fifteen minutes early..." bubble sa_sigh_1
+    play music life_with_masks
+    msg er "I arrived fifteen minutes early..." bubble sa_sigh_l 
     msg er "It's not usually like this, where I'm nervous or second guessing things."
     msg er "But Nerissa is quite..."
     enter chatroom gg
-    msg gg "QUITE BEAUTIFULLLLL"
+    msg gg "QUITE BEAUTIFULLLLL" curly glow
     msg er "Gigi, you're here! Where are CC and Rara?"
     msg gg "theyre with me!"
     msg gg "i saw what u were saying and i wanted to pop in and help"
@@ -68,42 +72,44 @@ label day_1_chatroom_3():
     msg er "I do not want to make it obvious I'm monitoring her!"
     msg er "But also I... I am a bit unsure."
     msg er "I want to provide a good experience for Nerissa."
-    msg gg "like... in a freaky way?"
-    msg er "NO!" bubble sa_spike_s
+    msg gg "like..."
+    msg gg "in a freaky way?" ser1
+    msg er "NO!" (bounce=True, specBubble="s_spike_s")
     msg er "I mean it in a wholesome, getting flowers, and chivalarous behaviour experience..."
     msg er "Nerissa may not have the best impression of me..."
-    msg er "...since I'm supposed to capture her..."
+    msg er "...since I'm supposed to capture her..." 
     msg gg "you're taking her out to lunch at a nice cafe"
-    msg gg "in perfect weather"
-    msg gg "on a sunny day"
-    msg gg "where the leaves {i}just{/i} came back"
+    msg gg "in perfect weather" ser2
+    msg gg "on a sunny day" ser2
+    msg gg "where the leaves {i}just{/i} came back" ser2
     msg gg "the conditions are already good enough i'd say"
     msg gg "-cc" pv 0.1
     msg er "Thank you CC, but I'm asking about what I should {i}do{/i}."
     enter chatroom ra
-    msg ra "It's as you said Liz, get her some flowers!!"
+    msg ra "It's as you said Liz, get her some flowers!!" 
     msg ra "Oh, and offer to pay for her meal!"
     msg ra "You can even serenade her when she arrives!"
     msg er "Serenading is a bit much, but I'll think about it..."
-    msg ra "I think you're perfect just the way you are!"
+    msg ra "I think you're perfect just the way you are!" glow
     msg ra "You don't need to ask how to act, just be yourself!"
     msg gg "ya i agree ur such a natural prince"
     msg gg "just do what u think will be good for the date!" 
     msg er "ASKLJDHFHSA" big
     msg er "DATE!?"
-    msg ra "Is it note a date???"
+    msg ra "Is it not a date???"
     msg er "Well-"
-    msg gg "liz didnt u have plans on going on a date w nerissa"
+    msg gg "liz didnt u have plans on going on a date w nerissa" 
     msg gg "like from our debuts..."
-    msg er "IT'S JUST MONITORING!"
+    msg er "IT'S JUST MONITORING!" big bold
+    show shake
     
     menu:
-        "I don't know, sounds like a date...":
-        award heart gg
+        "I don't know, sounds like a date to me.":
+            award heart gg
             msg gg "SEEEE?"
             msg gg "cmon liz u know its a date"
         "Maybe it's just a really friendly outing.":
-        award heart er
+            award heart er
             msg er "AND IT IS!"
             msg er "NOTE A DATE!"
             msg gg "i mean..."
@@ -118,14 +124,15 @@ label day_1_chatroom_3():
     msg m "Have a fun time."
     exit chatroom er
     msg gg "so..."
-    msg gg "wanna see them 2gether?"
+    play music silly_smile_again
+    msg gg "wanna see them 2gether?" glow
     msg m "You're stalking them?"
     enter chatroom cc
     msg cc "it's not STALKING"
     msg cc "liz would say it's monitoring"
     msg cc "we're just here to make sure the date goes smoothly"
     msg ra "And that Nerissa doesn't do anything bad!"
-    msg cc "we all know she won't"
+    msg cc "we all know she won't" ser2
     msg cc "it's sooo obvious she's in love with liz and vice versa"
     msg cc "but it's better to be safe than sorry"
     msg cc "also you can't see it but raora and gg are fighting on who takes the better picture"
@@ -134,8 +141,8 @@ label day_1_chatroom_3():
     msg cc "you may be right and i take back the betting statement"
     msg gg "I GOY IR"
     msg cc "i am so glad i didn't actually bet"
-    msg ra "ADVENT IS ALSO HEREEEEE"
-    msg ra "ASSISTANT, PLS HELP US"
+    msg ra "ADVENT IS ALSO HEREEEEE" curly
+    msg ra "ASSISTANT, PLS HELP US" curly
     msg m "What? I don't think I can do anything..."
     exit chatroom gg
     msg cc "DON'T SAY ANYTHING TO LIZ"
@@ -145,5 +152,35 @@ label day_1_chatroom_3():
     msg m "What exactly happened?"
     msg ra "Things can escalate and then you end up running!"
     msg cc "ALL IN A MINUTE"
-    enter chatroom gg
-    msg gg "insert image"
+    msg gg "IM DA FISTER NOT DA RUNNER"
+    msg cc "GET OFF YOUR PHONE" big glow
+    exit chatroom cc
+    exit chatroom ra
+    exit chatroom gg
+    msg m "..."
+    msg m "It hasn't even been a day."
+    msg m "But I'm still tired..."
+    return
+
+label after_day_1_chatroom_3:
+    compose text er:
+        msg er "I profusely apologize for any problems the girls have caused."
+        msg er "Please let me know if they disrupt work."
+        msg er "Thank you."
+        label polite1
+
+    return
+
+label polite1: 
+    menu:
+        "It's no problem; I expected a chaotic workplace anyways.":
+            msg er "Really?"
+            msg er "Do we really seem like that?"
+            msg er "Well, I need to go back to Nerissa, so..."
+            msg er "Keep up the good work!"
+        "Everyone's fun, I don't mind!":
+            award heart er
+            msg er "Thank the gods..."
+            msg er "Please have a good rest of your day."
+            msg er "(Nerissa says hello, by the way)"
+    return
